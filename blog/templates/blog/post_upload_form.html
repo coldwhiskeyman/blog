@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Загрузить посты" %}{% endblock %}
+
+{% block content %}
+    <p>{% trans "Загрузите CSV-файл с двумя колонками: текст, дата публикации" %}</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary" type="submit">{% trans "Подтвердить" %}</button>
+    </form>
+{% endblock %}

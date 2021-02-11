@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{{ object.username }}{% endblock %}
+
+{% block content %}
+    <h2>{{ object.username }}</h2>
+    {% if object.profile.avatar %}
+        <img src="{{ MEDIA_URL }}{{ object.profile.avatar }}" alt="аватар" width="200" height="200">
+    {% else %}
+        <img src="{{ MEDIA_URL }}avatars/anonymous.jpg" alt="аватар" width="200" height="200">
+    {% endif %}
+    <p>Имя: {{ object.first_name }}</p>
+    <p>Фамилия: {{ object.last_name }}</p>
+    <p>О себе: {{ object.profile.bio }}</p>
+    <p><a href="{% url 'user_update' request.user.id %}">{% trans "Редактировать профиль" %}</a></p>
+{% endblock %}

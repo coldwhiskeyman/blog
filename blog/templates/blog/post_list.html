@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Время удивительных историй!" %}{% endblock %}
+
+{% block content %}
+    <h1>{% trans "Время удивительных историй!" %}</h1>
+    <ul>
+        {% for post in post_list %}
+            <li class="card">
+                <div class="card-header">{{ post.user }}
+                    {% if post.user.profile.avatar %}
+                        <img src="{{ MEDIA_URL }}{{ post.user.profile.avatar }}" alt="аватар" width="50" height="50">
+                    {% else %}
+                        <img src="{{ MEDIA_URL }}avatars/anonymous.jpg" alt="аватар" width="50" height="50">
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    <p class="card-text">
+                        {{ post.text|truncatechars:100 }}
+                    </p>
+                    {% if request.user.is_authenticated %}
+                        <p><a href="{% url 'post_details' post.id %}">{% trans "Полный текст" %}</a></p>
+                    {% else %}
+                        <p>{% trans "Чтобы прочитать полный текст поста, " %}
+                            <a href="{% url 'login' %}">{% trans "войдите" %}</a>{% trans " с паролем" %}</p>
+                    {% endif %}
+                </div>
+                <div class="card-footer">{{ post.published|date:'j E Y, H:i' }}</div>
+            </li>
+        {% endfor %}
+    </ul>
+    {% if request.user.is_authenticated %}
+        <a href="{% url 'post_create' %}"><button class="btn btn-primary">{% trans "Добавить пост" %}</button></a>
+    {% endif %}
+{% endblock %}

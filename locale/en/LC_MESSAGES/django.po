@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-15 11:41+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\app_users\apps.py:7
+msgid "Пользователи"
+msgstr "Users"
+
+#: .\app_users\forms.py:8 .\app_users\forms.py:19
+msgid "Имя"
+msgstr "First name"
+
+#: .\app_users\forms.py:9 .\app_users\forms.py:20
+msgid "Фамилия"
+msgstr "Last name"
+
+#: .\app_users\forms.py:10 .\app_users\forms.py:21 .\app_users\models.py:9
+msgid "Аватар"
+msgstr "Avatar"
+
+#: .\app_users\forms.py:11 .\app_users\forms.py:22 .\app_users\models.py:8
+msgid "О себе"
+msgstr "Biography"
+
+#: .\app_users\models.py:12
+msgid "профиль"
+msgstr "profile"
+
+#: .\app_users\models.py:13
+msgid "профили"
+msgstr "profiles"
+
+#: .\app_users\templates\app_users\login.html:4
+msgid "Авторизация"
+msgstr "Authorisation"
+
+#: .\app_users\templates\app_users\login.html:10 .\templates\base.html:22
+msgid "Войти"
+msgstr "Log in"
+
+#: .\app_users\templates\app_users\register.html:4
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\app_users\templates\app_users\register.html:10
+msgid "Зарегистрироваться"
+msgstr "Sign up"
+
+#: .\app_users\templates\app_users\user_detail.html:16
+msgid "Редактировать профиль"
+msgstr "Edit profile"
+
+#: .\app_users\templates\app_users\user_update.html:4
+msgid "Редактирование профиля"
+msgstr "Profile editing"
+
+#: .\app_users\templates\app_users\user_update.html:10
+msgid "Обновить"
+msgstr "Update"
+
+#: .\blog\apps.py:7
+msgid "Блог"
+msgstr "Blog"
+
+#: .\blog\forms.py:8
+msgid "CSV-файл"
+msgstr "CSV file"
+
+#: .\blog\forms.py:12 .\blog\models.py:35
+msgid "Картинки"
+msgstr "Images"
+
+#: .\blog\models.py:8
+msgid "Заголовок"
+msgstr "Title"
+
+#: .\blog\models.py:9
+msgid "Текст"
+msgstr "Text"
+
+#: .\blog\models.py:10
+msgid "Автор"
+msgstr "Author"
+
+#: .\blog\models.py:11
+msgid "Дата создания"
+msgstr "Creation date"
+
+#: .\blog\models.py:12
+msgid "Дата публикации"
+msgstr "Publishing date"
+
+#: .\blog\models.py:22
+msgid "пост"
+msgstr "post"
+
+#: .\blog\models.py:23
+msgid "посты"
+msgstr "posts"
+
+#: .\blog\models.py:28
+msgid "Пост"
+msgstr "Post"
+
+#: .\blog\models.py:34
+msgid "Картинка"
+msgstr "Image"
+
+#: .\blog\templates\blog\post_form.html:4
+#: .\blog\templates\blog\post_list.html:35
+msgid "Добавить пост"
+msgstr "Add post"
+
+#: .\blog\templates\blog\post_form.html:10
+#: .\blog\templates\blog\post_upload_form.html:11
+msgid "Подтвердить"
+msgstr "Submit"
+
+#: .\blog\templates\blog\post_list.html:4
+#: .\blog\templates\blog\post_list.html:7 .\templates\index.html:4
+#: .\templates\index.html:7
+msgid "Время удивительных историй!"
+msgstr "It's time for amazing stories!"
+
+#: .\blog\templates\blog\post_list.html:24
+msgid "Полный текст"
+msgstr "Full text"
+
+#: .\blog\templates\blog\post_list.html:26
+msgid "Чтобы прочитать полный текст поста, "
+msgstr "If you want to see full text, "
+
+#: .\blog\templates\blog\post_list.html:27
+msgid "войдите"
+msgstr "log in"
+
+#: .\blog\templates\blog\post_list.html:27
+msgid " с паролем"
+msgstr " with password"
+
+#: .\blog\templates\blog\post_upload_form.html:4 .\templates\base.html:34
+msgid "Загрузить посты"
+msgstr "Upload posts"
+
+#: .\blog\templates\blog\post_upload_form.html:7
+msgid "Загрузите CSV-файл с двумя колонками: текст, дата публикации"
+msgstr "Upload CSV file with two columns: text, publishing date"
+
+#: .\blog\views.py:56
+msgid "Без названия"
+msgstr "Untitled"
+
+#: .\templates\base.html:16
+msgid "Здравствуйте, "
+msgstr "Hello, "
+
+#: .\templates\base.html:19
+msgid "Выйти"
+msgstr "Log out"
+
+#: .\templates\base.html:21
+msgid "Зарегистироваться"
+msgstr "Sign up"
+
+#: .\templates\base.html:27
+msgid "Главная"
+msgstr "Main"
+
+#: .\templates\base.html:30
+msgid "Последние посты"
+msgstr "Last posts"
